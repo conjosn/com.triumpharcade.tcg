@@ -1,0 +1,8 @@
+###### Class Do.c (Do.c)
+.class interface abstract LDo/c;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a()I
+.end method

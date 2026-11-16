@@ -1,0 +1,12 @@
+###### Class Oe.N1 (Oe.N1)
+.class public interface abstract LOe/N1;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# virtual methods
+.method public abstract start()V
+.end method
+
+.method public abstract stop()V
+.end method

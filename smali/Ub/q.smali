@@ -1,0 +1,250 @@
+###### Class Ub.q (Ub.q)
+.class public final LUb/q;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        LUb/q$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final d:LUb/q$a;
+
+
+# instance fields
+.field private final a:I
+
+.field private final b:I
+
+.field public final c:LUb/l;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, LUb/q$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, LUb/q$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, LUb/q;->d:LUb/q$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(IILUb/l;)V
+    .registers 5
+
+    .line 1
+    const-string v0, "what"
+
+    .line 2
+    .line 3
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput p1, p0, LUb/q;->a:I
+
+    .line 10
+    .line 11
+    iput p2, p0, LUb/q;->b:I
+
+    .line 12
+    .line 13
+    iput-object p3, p0, LUb/q;->c:LUb/l;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/text/SpannableStringBuilder;I)V
+    .registers 6
+
+    .line 1
+    const-string v0, "builder"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    if-ltz p2, :cond_34
+
+    .line 7
+    .line 8
+    iget v0, p0, LUb/q;->a:I
+
+    .line 9
+    .line 10
+    if-nez v0, :cond_e
+
+    .line 11
+    .line 12
+    const/16 v0, 0x12
+
+    .line 13
+    .line 14
+    goto :goto_10
+
+    .line 15
+    :cond_e
+    const/16 v0, 0x22
+
+    .line 16
+    .line 17
+    :goto_10
+    rsub-int p2, p2, 0xff
+
+    .line 18
+    .line 19
+    if-gez p2, :cond_1b
+
+    .line 20
+    .line 21
+    const-string v1, "SetSpanOperation"
+
+    .line 22
+    .line 23
+    const-string v2, "Text tree size exceeded the limit, styling may become unpredictable"
+
+    .line 24
+    .line 25
+    invoke-static {v1, v2}, LH9/a;->F(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    :cond_1b
+    const/4 v1, 0x0
+
+    .line 29
+    invoke-static {p2, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p2
+
+    .line 33
+    const v1, -0xff0001
+
+    .line 34
+    .line 35
+    .line 36
+    and-int/2addr v0, v1
+
+    .line 37
+    shl-int/lit8 p2, p2, 0x10
+
+    .line 38
+    .line 39
+    const/high16 v1, 0xff0000
+
+    .line 40
+    .line 41
+    and-int/2addr p2, v1
+
+    .line 42
+    or-int/2addr p2, v0
+
+    .line 43
+    iget-object v0, p0, LUb/q;->c:LUb/l;
+
+    .line 44
+    .line 45
+    iget v1, p0, LUb/q;->a:I
+
+    .line 46
+    .line 47
+    iget v2, p0, LUb/q;->b:I
+
+    .line 48
+    .line 49
+    invoke-virtual {p1, v0, v1, v2, p2}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    .line 50
+    .line 51
+    .line 52
+    return-void
+
+    .line 53
+    :cond_34
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 54
+    .line 55
+    const-string p2, "Check failed."
+
+    .line 56
+    .line 57
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 58
+    .line 59
+    .line 60
+    throw p1
+.end method
+
+###### Class Ub.q.a (Ub.q$a)
+.class public final LUb/q$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LUb/q;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, LUb/q$a;-><init>()V
+
+    return-void
+.end method

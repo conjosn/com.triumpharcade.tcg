@@ -1,0 +1,28 @@
+###### Class Tg.g (Tg.g)
+.class public final LTg/g;
+.super Lexpo/modules/kotlin/exception/CodedException;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x2
+
+    .line 3
+    const-string v2, "Unable to store the response body as a blob because React Native\'s BlobModule is not available. Make sure your app includes the React Native blob support or read the body with arrayBuffer() instead"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v2, v0, v1, v0}, Lexpo/modules/kotlin/exception/CodedException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

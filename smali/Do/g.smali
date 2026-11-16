@@ -1,0 +1,118 @@
+###### Class Do.g (Do.g)
+.class public LDo/g;
+.super LDo/d;
+
+
+# instance fields
+.field private final c:LDo/a;
+
+
+# direct methods
+.method public constructor <init>(LDo/e;[B)V
+    .registers 6
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0, p1}, LDo/d;-><init>(ZLDo/e;)V
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p1}, LDo/e;->b()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p1
+
+    .line 9
+    array-length v1, p2
+
+    .line 10
+    mul-int/lit8 v2, p1, 0x2
+
+    .line 11
+    .line 12
+    if-ne v1, v2, :cond_1d
+
+    .line 13
+    .line 14
+    new-instance v1, LDo/a;
+
+    .line 15
+    .line 16
+    invoke-static {p2, v0, p1}, Lbp/a;->m([BII)[B
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-static {p2, p1, v2}, Lbp/a;->m([BII)[B
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    invoke-direct {v1, v0, p1}, LDo/a;-><init>([B[B)V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object v1, p0, LDo/g;->c:LDo/a;
+
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :cond_1d
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 31
+    .line 32
+    const-string p2, "public key encoding does not match parameters"
+
+    .line 33
+    .line 34
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    throw p1
+.end method
+
+
+# virtual methods
+.method public getEncoded()[B
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, LDo/g;->c:LDo/a;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, LDo/a;->a:[B
+
+    .line 4
+    .line 5
+    iget-object v0, v0, LDo/a;->b:[B
+
+    .line 6
+    .line 7
+    invoke-static {v1, v0}, Lbp/a;->h([B[B)[B
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method

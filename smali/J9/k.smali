@@ -1,0 +1,53 @@
+###### Class J9.k (J9.k)
+.class public abstract LJ9/k;
+.super Ljava/io/OutputStream;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a()LJ9/h;
+.end method
+
+.method public close()V
+    .registers 2
+
+    .line 1
+    :try_start_0
+    invoke-super {p0}, Ljava/io/OutputStream;->close()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_3} :catch_4
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+
+    .line 5
+    :catch_4
+    move-exception v0
+
+    .line 6
+    invoke-static {v0}, LG9/p;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public abstract size()I
+.end method
