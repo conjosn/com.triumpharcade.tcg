@@ -1,0 +1,18 @@
+package com.facebook.imagepipeline.producers;
+
+/* JADX INFO: renamed from: com.facebook.imagepipeline.producers.f, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class AbstractC4771f implements f0 {
+    @Override // com.facebook.imagepipeline.producers.f0
+    public void a() {
+    }
+
+    @Override // com.facebook.imagepipeline.producers.f0
+    public void c() {
+    }
+
+    @Override // com.facebook.imagepipeline.producers.f0
+    public void d() {
+    }
+}

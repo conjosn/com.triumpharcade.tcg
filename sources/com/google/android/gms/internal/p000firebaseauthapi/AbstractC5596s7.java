@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.p000firebaseauthapi;
+
+/* JADX INFO: renamed from: com.google.android.gms.internal.firebase-auth-api.s7, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class AbstractC5596s7 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private static final C5616t7 f51152a = new C5616t7();
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private static final H6 f51153b = new C5557q7();
+
+    public static H6 a() {
+        return f51153b;
+    }
+}

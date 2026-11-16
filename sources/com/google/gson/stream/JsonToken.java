@@ -1,0 +1,16 @@
+package com.google.gson.stream;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public enum JsonToken {
+    BEGIN_ARRAY,
+    END_ARRAY,
+    BEGIN_OBJECT,
+    END_OBJECT,
+    NAME,
+    STRING,
+    NUMBER,
+    BOOLEAN,
+    NULL,
+    END_DOCUMENT
+}

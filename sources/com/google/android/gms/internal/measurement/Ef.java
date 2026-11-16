@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class Ef extends Z2 {
+    public Ef() {
+        super("internal.platform");
+        this.f52091b.put("getVersion", new C5852ff(this, "getVersion"));
+    }
+
+    @Override // com.google.android.gms.internal.measurement.Z2
+    public final L3 c(C6029q6 c6029q6, List list) {
+        return L3.f51719B;
+    }
+}

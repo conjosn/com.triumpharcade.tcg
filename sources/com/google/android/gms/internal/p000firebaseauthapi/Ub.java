@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.p000firebaseauthapi;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface Ub {
+    byte[] a(byte[] bArr, byte[] bArr2, int i10);
+
+    byte[] b(byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4);
+
+    int zza();
+}

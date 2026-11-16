@@ -1,0 +1,14 @@
+package com.google.android.recaptcha.internal;
+
+import java.util.Map;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+abstract class zzmp {
+    zzmp() {
+    }
+
+    abstract void zza(Object obj);
+
+    abstract void zzb(zzpy zzpyVar, Map.Entry entry);
+}

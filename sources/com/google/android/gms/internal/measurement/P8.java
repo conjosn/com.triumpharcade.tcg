@@ -1,0 +1,49 @@
+package com.google.android.gms.internal.measurement;
+
+import Wc.AbstractC3540i;
+import Wc.C3537f;
+import android.content.Context;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Looper;
+import com.google.android.gms.common.C5210d;
+import com.google.android.gms.common.api.h;
+import com.google.android.gms.common.api.internal.InterfaceC5188f;
+import com.google.android.gms.common.api.internal.InterfaceC5196n;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class P8 extends AbstractC3540i {
+    public P8(Context context, Looper looper, C3537f c3537f, h.a aVar, h.b bVar) {
+        super(context, looper, 51, c3537f, (InterfaceC5188f) aVar, (InterfaceC5196n) bVar);
+    }
+
+    @Override // Wc.AbstractC3535d
+    protected final String E() {
+        return "com.google.android.gms.phenotype.internal.IPhenotypeService";
+    }
+
+    @Override // Wc.AbstractC3535d
+    protected final String F() {
+        return "com.google.android.gms.phenotype.service.START";
+    }
+
+    @Override // Wc.AbstractC3535d, com.google.android.gms.common.api.a.f
+    public final int m() {
+        return 9410000;
+    }
+
+    @Override // Wc.AbstractC3535d
+    protected final /* synthetic */ IInterface s(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.phenotype.internal.IPhenotypeService");
+        return iInterfaceQueryLocalInterface instanceof O8 ? (O8) iInterfaceQueryLocalInterface : new O8(iBinder);
+    }
+
+    @Override // Wc.AbstractC3535d
+    public final C5210d[] v() {
+        return AbstractC5879h8.f52327j;
+    }
+}

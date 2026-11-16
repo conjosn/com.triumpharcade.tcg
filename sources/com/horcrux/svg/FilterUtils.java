@@ -1,0 +1,26 @@
+package com.horcrux.svg;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.Paint;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public class FilterUtils {
+    public static Bitmap applySourceAlphaFilter(Bitmap bitmap) {
+        ColorMatrix colorMatrix = new ColorMatrix();
+        colorMatrix.set(new float[]{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f});
+        return getBitmapWithColorMatrix(colorMatrix, bitmap);
+    }
+
+    public static Bitmap getBitmapWithColorMatrix(ColorMatrix colorMatrix, Bitmap bitmap) {
+        Bitmap bitmapCreateBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), bitmap.getConfig());
+        Canvas canvas = new Canvas(bitmapCreateBitmap);
+        Paint paint = new Paint();
+        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
+        canvas.drawBitmap(bitmap, 0.0f, 0.0f, paint);
+        return bitmapCreateBitmap;
+    }
+}

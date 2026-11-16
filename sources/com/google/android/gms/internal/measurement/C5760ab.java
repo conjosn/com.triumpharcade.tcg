@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.List;
+import java.util.Objects;
+
+/* JADX INFO: renamed from: com.google.android.gms.internal.measurement.ab, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+final class C5760ab extends Z2 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    C5760ab(C5833ed c5833ed, String str) {
+        super("silent");
+        Objects.requireNonNull(c5833ed);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.Z2
+    public final L3 c(C6029q6 c6029q6, List list) {
+        return this;
+    }
+}

@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.p000firebaseauthapi;
+
+import org.json.JSONObject;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class W2 implements F1 {
+    W2() {
+    }
+
+    public static W2 a() {
+        return new W2();
+    }
+
+    @Override // com.google.android.gms.internal.p000firebaseauthapi.F1
+    public final String zza() {
+        return new JSONObject().toString();
+    }
+}

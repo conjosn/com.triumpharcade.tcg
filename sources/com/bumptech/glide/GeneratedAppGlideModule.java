@@ -1,0 +1,21 @@
+package com.bumptech.glide;
+
+import a6.o;
+import com.bumptech.glide.module.AppGlideModule;
+import java.util.HashSet;
+import java.util.Set;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+abstract class GeneratedAppGlideModule extends AppGlideModule {
+    GeneratedAppGlideModule() {
+    }
+
+    Set d() {
+        return new HashSet();
+    }
+
+    o.b e() {
+        return null;
+    }
+}

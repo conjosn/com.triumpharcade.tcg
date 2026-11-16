@@ -1,0 +1,73 @@
+package com.google.android.gms.internal.measurement;
+
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class P7 extends X0 implements C1 {
+    private static final P7 zze;
+    private static volatile I1 zzf;
+    private InterfaceC5872h1 zzb = X0.E();
+
+    static {
+        P7 p72 = new P7();
+        zze = p72;
+        X0.y(P7.class, p72);
+    }
+
+    private P7() {
+    }
+
+    public static P7 M() {
+        return zze;
+    }
+
+    @Override // com.google.android.gms.internal.measurement.X0
+    protected final Object J(int i10, Object obj, Object obj2) {
+        I1 v02;
+        int i11 = i10 - 1;
+        if (i11 == 0) {
+            return (byte) 1;
+        }
+        if (i11 == 2) {
+            return X0.z(zze, "\u0004\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001b", new Object[]{"zzb", R7.class});
+        }
+        if (i11 == 3) {
+            return new P7();
+        }
+        byte[] bArr = null;
+        if (i11 == 4) {
+            return new O7(bArr);
+        }
+        if (i11 == 5) {
+            return zze;
+        }
+        if (i11 != 6) {
+            throw null;
+        }
+        I1 i12 = zzf;
+        if (i12 != null) {
+            return i12;
+        }
+        synchronized (P7.class) {
+            try {
+                v02 = zzf;
+                if (v02 == null) {
+                    v02 = new V0(zze);
+                    zzf = v02;
+                }
+            } catch (Throwable th2) {
+                throw th2;
+            }
+        }
+        return v02;
+    }
+
+    public final List K() {
+        return this.zzb;
+    }
+
+    public final int L() {
+        return this.zzb.size();
+    }
+}

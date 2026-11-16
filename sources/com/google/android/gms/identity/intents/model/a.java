@@ -1,0 +1,90 @@
+package com.google.android.gms.identity.intents.model;
+
+import Xc.b;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.tiktok.appevents.TTIdentifierFactory;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class a implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int iC = b.C(parcel);
+        String strG = null;
+        String strG2 = null;
+        String strG3 = null;
+        String strG4 = null;
+        String strG5 = null;
+        String strG6 = null;
+        String strG7 = null;
+        String strG8 = null;
+        String strG9 = null;
+        String strG10 = null;
+        String strG11 = null;
+        String strG12 = null;
+        String strG13 = null;
+        String strG14 = null;
+        boolean zN = false;
+        while (parcel.dataPosition() < iC) {
+            int iT = b.t(parcel);
+            switch (b.m(iT)) {
+                case 2:
+                    strG = b.g(parcel, iT);
+                    break;
+                case 3:
+                    strG2 = b.g(parcel, iT);
+                    break;
+                case 4:
+                    strG3 = b.g(parcel, iT);
+                    break;
+                case 5:
+                    strG4 = b.g(parcel, iT);
+                    break;
+                case 6:
+                    strG5 = b.g(parcel, iT);
+                    break;
+                case 7:
+                    strG6 = b.g(parcel, iT);
+                    break;
+                case 8:
+                    strG7 = b.g(parcel, iT);
+                    break;
+                case 9:
+                    strG8 = b.g(parcel, iT);
+                    break;
+                case 10:
+                    strG9 = b.g(parcel, iT);
+                    break;
+                case 11:
+                    strG10 = b.g(parcel, iT);
+                    break;
+                case 12:
+                    strG11 = b.g(parcel, iT);
+                    break;
+                case 13:
+                    strG12 = b.g(parcel, iT);
+                    break;
+                case TTIdentifierFactory.AdIdInfo.FROM_SERVICE /* 14 */:
+                    zN = b.n(parcel, iT);
+                    break;
+                case 15:
+                    strG13 = b.g(parcel, iT);
+                    break;
+                case 16:
+                    strG14 = b.g(parcel, iT);
+                    break;
+                default:
+                    b.B(parcel, iT);
+                    break;
+            }
+        }
+        b.l(parcel, iC);
+        return new UserAddress(strG, strG2, strG3, strG4, strG5, strG6, strG7, strG8, strG9, strG10, strG11, strG12, zN, strG13, strG14);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object[] newArray(int i10) {
+        return new UserAddress[i10];
+    }
+}

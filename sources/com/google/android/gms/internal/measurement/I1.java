@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.measurement;
+
+import java.io.InputStream;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface I1 {
+    Object a(InputStream inputStream, K0 k02);
+
+    Object b(AbstractC6175z0 abstractC6175z0, K0 k02);
+}

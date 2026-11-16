@@ -1,0 +1,49 @@
+package com.swmansion.rnscreens.gamma.stack.header.subview;
+
+import kotlin.enums.EnumEntries;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class e {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final e f58589a = new e("BACKGROUND", 0);
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public static final e f58590b = new e("LEADING", 1);
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public static final e f58591c = new e("CENTER", 2);
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public static final e f58592d = new e("TRAILING", 3);
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    private static final /* synthetic */ e[] f58593e;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f58594f;
+
+    static {
+        e[] eVarArrB = b();
+        f58593e = eVarArrB;
+        f58594f = Jl.a.a(eVarArrB);
+    }
+
+    private e(String str, int i10) {
+    }
+
+    private static final /* synthetic */ e[] b() {
+        return new e[]{f58589a, f58590b, f58591c, f58592d};
+    }
+
+    public static e valueOf(String str) {
+        return (e) Enum.valueOf(e.class, str);
+    }
+
+    public static e[] values() {
+        return (e[]) f58593e.clone();
+    }
+}

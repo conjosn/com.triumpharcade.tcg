@@ -1,0 +1,23 @@
+package com.github.penfeizhou.animation.io;
+
+import java.io.InputStream;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface Reader {
+    int available();
+
+    void close();
+
+    byte peek();
+
+    int position();
+
+    int read(byte[] bArr, int i10, int i11);
+
+    void reset();
+
+    long skip(long j10);
+
+    InputStream toInputStream();
+}
