@@ -1,0 +1,123 @@
+package okhttp3.internal.platform;
+
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.Provider;
+import java.util.Arrays;
+import java.util.List;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.openjsse.net.ssl.OpenJSSE;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u00162\u00020\u0001:\u0001\u001eB\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000f\u0010\u0005\u001a\u00020\u0004H\u0016¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0019\u0010\f\u001a\u0004\u0018\u00010\u00072\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ/\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0011\u001a\u0004\u0018\u00010\u00102\f\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012H\u0016¢\u0006\u0004\b\u0016\u0010\u0017J\u0019\u0010\u0018\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u000f\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u0018\u0010\u0019R\u0014\u0010\u001d\u001a\u00020\u001a8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u001c¨\u0006\u001f"}, d2 = {"Lokhttp3/internal/platform/OpenJSSEPlatform;", "Lokhttp3/internal/platform/Platform;", "<init>", "()V", "Ljavax/net/ssl/SSLContext;", "n", "()Ljavax/net/ssl/SSLContext;", "Ljavax/net/ssl/X509TrustManager;", "p", "()Ljavax/net/ssl/X509TrustManager;", "Ljavax/net/ssl/SSLSocketFactory;", "sslSocketFactory", "q", "(Ljavax/net/ssl/SSLSocketFactory;)Ljavax/net/ssl/X509TrustManager;", "Ljavax/net/ssl/SSLSocket;", "sslSocket", "", "hostname", "", "Lokhttp3/Protocol;", "protocols", "", "e", "(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V", "h", "(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;", "Ljava/security/Provider;", "d", "Ljava/security/Provider;", "provider", "Companion", "okhttp"}, k = 1, mv = {1, 8, 0}, xi = 48)
+public final class OpenJSSEPlatform extends Platform {
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name and from kotlin metadata */
+    public static final Companion INSTANCE;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    private static final boolean f88358f;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name and from kotlin metadata */
+    private final Provider provider;
+
+    /* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+    @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000f\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0005\u0010\u0006R\u0017\u0010\b\u001a\u00020\u00078\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\n\u0010\u000b¨\u0006\f"}, d2 = {"Lokhttp3/internal/platform/OpenJSSEPlatform$Companion;", "", "<init>", "()V", "Lokhttp3/internal/platform/OpenJSSEPlatform;", "a", "()Lokhttp3/internal/platform/OpenJSSEPlatform;", "", "isSupported", "Z", "b", "()Z", "okhttp"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final OpenJSSEPlatform a() {
+            DefaultConstructorMarker defaultConstructorMarker = null;
+            if (b()) {
+                return new OpenJSSEPlatform(defaultConstructorMarker);
+            }
+            return null;
+        }
+
+        public final boolean b() {
+            return OpenJSSEPlatform.f88358f;
+        }
+
+        private Companion() {
+        }
+    }
+
+    static {
+        Companion companion = new Companion(null);
+        INSTANCE = companion;
+        boolean z10 = false;
+        try {
+            Class.forName("org.openjsse.net.ssl.OpenJSSE", false, companion.getClass().getClassLoader());
+            z10 = true;
+        } catch (ClassNotFoundException unused) {
+        }
+        f88358f = z10;
+    }
+
+    public /* synthetic */ OpenJSSEPlatform(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    @Override // okhttp3.internal.platform.Platform
+    public void e(SSLSocket sslSocket, String hostname, List protocols) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        Intrinsics.checkNotNullParameter(protocols, "protocols");
+        super.e(sslSocket, hostname, protocols);
+    }
+
+    @Override // okhttp3.internal.platform.Platform
+    public String h(SSLSocket sslSocket) {
+        Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
+        return super.h(sslSocket);
+    }
+
+    @Override // okhttp3.internal.platform.Platform
+    public SSLContext n() throws NoSuchAlgorithmException {
+        SSLContext sSLContext = SSLContext.getInstance("TLSv1.3", this.provider);
+        Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLSv1.3\", provider)");
+        return sSLContext;
+    }
+
+    @Override // okhttp3.internal.platform.Platform
+    public X509TrustManager p() throws NoSuchAlgorithmException, KeyStoreException {
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm(), this.provider);
+        trustManagerFactory.init((KeyStore) null);
+        TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+        Intrinsics.checkNotNull(trustManagers);
+        if (trustManagers.length == 1) {
+            TrustManager trustManager = trustManagers[0];
+            if (trustManager instanceof X509TrustManager) {
+                Intrinsics.e(trustManager, "null cannot be cast to non-null type javax.net.ssl.X509TrustManager");
+                return (X509TrustManager) trustManager;
+            }
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Unexpected default trust managers: ");
+        String string = Arrays.toString(trustManagers);
+        Intrinsics.checkNotNullExpressionValue(string, "toString(this)");
+        sb2.append(string);
+        throw new IllegalStateException(sb2.toString().toString());
+    }
+
+    @Override // okhttp3.internal.platform.Platform
+    public X509TrustManager q(SSLSocketFactory sslSocketFactory) {
+        Intrinsics.checkNotNullParameter(sslSocketFactory, "sslSocketFactory");
+        throw new UnsupportedOperationException("clientBuilder.sslSocketFactory(SSLSocketFactory) not supported with OpenJSSE");
+    }
+
+    private OpenJSSEPlatform() {
+        this.provider = new OpenJSSE();
+    }
+}

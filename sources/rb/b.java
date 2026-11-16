@@ -1,0 +1,20 @@
+package Rb;
+
+import android.content.Context;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class b {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final b f20580a = new b();
+
+    private b() {
+    }
+
+    public static final boolean a(Context context) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        return (context.getResources().getConfiguration().uiMode & 48) == 32;
+    }
+}

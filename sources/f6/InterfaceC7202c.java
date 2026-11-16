@@ -1,0 +1,8 @@
+package f6;
+
+/* JADX INFO: renamed from: f6.c, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+public interface InterfaceC7202c {
+    InterfaceC7201b a(L5.a aVar, boolean z10);
+}

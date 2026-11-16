@@ -1,0 +1,16 @@
+package android.support.v4.media;
+
+import androidx.media.AudioAttributesImplApi21;
+import androidx.versionedparcelable.a;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public final class AudioAttributesImplApi21Parcelizer extends androidx.media.AudioAttributesImplApi21Parcelizer {
+    public static AudioAttributesImplApi21 read(a aVar) {
+        return androidx.media.AudioAttributesImplApi21Parcelizer.read(aVar);
+    }
+
+    public static void write(AudioAttributesImplApi21 audioAttributesImplApi21, a aVar) {
+        androidx.media.AudioAttributesImplApi21Parcelizer.write(audioAttributesImplApi21, aVar);
+    }
+}

@@ -1,0 +1,39 @@
+package S0;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class j {
+    public static final i a(float f10, float f11, float f12, float f13, float f14, float f15) {
+        long jB = a.b((((long) Float.floatToRawIntBits(f14)) << 32) | (((long) Float.floatToRawIntBits(f15)) & 4294967295L));
+        return new i(f10, f11, f12, f13, jB, jB, jB, jB, null);
+    }
+
+    public static final i b(g gVar, float f10, float f11) {
+        return a(gVar.j(), gVar.n(), gVar.l(), gVar.e(), f10, f11);
+    }
+
+    public static final i c(g gVar, long j10, long j11, long j12, long j13) {
+        return new i(gVar.j(), gVar.n(), gVar.l(), gVar.e(), j10, j11, j12, j13, null);
+    }
+
+    public static final i d(float f10, float f11, float f12, float f13, long j10) {
+        return a(f10, f11, f12, f13, Float.intBitsToFloat((int) (j10 >> 32)), Float.intBitsToFloat((int) (j10 & 4294967295L)));
+    }
+
+    public static final i e(g gVar, long j10) {
+        return b(gVar, Float.intBitsToFloat((int) (j10 >> 32)), Float.intBitsToFloat((int) (j10 & 4294967295L)));
+    }
+
+    public static final g f(i iVar) {
+        return new g(iVar.e(), iVar.g(), iVar.f(), iVar.a());
+    }
+
+    public static final float g(i iVar) {
+        return Math.min(Math.abs(iVar.j()), Math.abs(iVar.d()));
+    }
+
+    public static final boolean h(i iVar) {
+        long jH = iVar.h();
+        return (jH >>> 32) == (jH & 4294967295L) && iVar.h() == iVar.i() && iVar.h() == iVar.c() && iVar.h() == iVar.b();
+    }
+}

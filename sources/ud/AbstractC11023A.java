@@ -1,0 +1,37 @@
+package ud;
+
+import Wc.AbstractC3550t;
+
+/* JADX INFO: renamed from: ud.A, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class AbstractC11023A {
+    public static int a(int i10) {
+        boolean z10 = true;
+        if (i10 != 100 && i10 != 102 && i10 != 104) {
+            if (i10 == 105) {
+                i10 = 105;
+            } else {
+                z10 = false;
+            }
+        }
+        AbstractC3550t.c(z10, "priority %d must be a Priority.PRIORITY_* constant", Integer.valueOf(i10));
+        return i10;
+    }
+
+    public static String b(int i10) {
+        if (i10 == 100) {
+            return "HIGH_ACCURACY";
+        }
+        if (i10 == 102) {
+            return "BALANCED_POWER_ACCURACY";
+        }
+        if (i10 == 104) {
+            return "LOW_POWER";
+        }
+        if (i10 == 105) {
+            return "PASSIVE";
+        }
+        throw new IllegalArgumentException();
+    }
+}

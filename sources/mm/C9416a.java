@@ -1,0 +1,16 @@
+package mm;
+
+import kotlin.jvm.functions.Function1;
+
+/* JADX INFO: renamed from: mm.a, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes6.dex */
+class C9416a implements Function1 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final C9416a f84702a = new C9416a();
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        return Boolean.valueOf(AbstractC9417b.f(obj));
+    }
+}

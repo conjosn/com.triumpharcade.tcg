@@ -1,0 +1,42 @@
+package R6;
+
+import java.util.Map;
+import kotlin.collections.I;
+import kotlin.jvm.internal.Intrinsics;
+import p6.C9910i;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class a implements b {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private volatile C9910i f20211a = new C9910i(null, null, null, null, null, 31, null);
+
+    @Override // R6.d
+    public C9910i a() {
+        return this.f20211a;
+    }
+
+    @Override // R6.b
+    public void b(Map properties) {
+        Intrinsics.checkNotNullParameter(properties, "properties");
+        this.f20211a = C9910i.b(this.f20211a, null, null, null, null, I.p(this.f20211a.c(), properties), 15, null);
+    }
+
+    @Override // R6.b
+    public void c(String str) {
+        this.f20211a = C9910i.b(this.f20211a, str, null, null, null, null, 30, null);
+    }
+
+    @Override // R6.b
+    public void clearUserInfo() {
+        this.f20211a = new C9910i(this.f20211a.d(), null, null, null, null, 30, null);
+    }
+
+    @Override // R6.b
+    public void setUserInfo(String id2, String str, String str2, Map extraInfo) {
+        Intrinsics.checkNotNullParameter(id2, "id");
+        Intrinsics.checkNotNullParameter(extraInfo, "extraInfo");
+        this.f20211a = C9910i.b(this.f20211a, null, id2, str, str2, I.v(extraInfo), 1, null);
+    }
+}

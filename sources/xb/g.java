@@ -1,0 +1,7 @@
+package xb;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public interface g {
+    boolean onRequestPermissionsResult(int i10, String[] strArr, int[] iArr);
+}

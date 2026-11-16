@@ -1,0 +1,19 @@
+package kotlin.io;
+
+import java.io.File;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes6.dex */
+public final class p extends h {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public p(File file, File file2, String str) {
+        super(file, file2, str);
+        Intrinsics.checkNotNullParameter(file, "file");
+    }
+
+    public /* synthetic */ p(File file, File file2, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this(file, (i10 & 2) != 0 ? null : file2, (i10 & 4) != 0 ? null : str);
+    }
+}

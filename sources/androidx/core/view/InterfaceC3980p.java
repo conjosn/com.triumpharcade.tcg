@@ -1,0 +1,12 @@
+package androidx.core.view;
+
+/* JADX INFO: renamed from: androidx.core.view.p, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public interface InterfaceC3980p {
+    boolean a(float f10);
+
+    float b();
+
+    void c();
+}

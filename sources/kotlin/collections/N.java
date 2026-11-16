@@ -1,0 +1,41 @@
+package kotlin.collections;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import kotlin.Pair;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.sequences.Sequence;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes6.dex */
+public class N extends M {
+    public static List A(Map map) {
+        Intrinsics.checkNotNullParameter(map, "<this>");
+        if (map.size() == 0) {
+            return CollectionsKt__CollectionsKt.emptyList();
+        }
+        Iterator it = map.entrySet().iterator();
+        if (!it.hasNext()) {
+            return CollectionsKt__CollectionsKt.emptyList();
+        }
+        Map.Entry entry = (Map.Entry) it.next();
+        if (!it.hasNext()) {
+            return C8513s.e(new Pair(entry.getKey(), entry.getValue()));
+        }
+        ArrayList arrayList = new ArrayList(map.size());
+        arrayList.add(new Pair(entry.getKey(), entry.getValue()));
+        do {
+            Map.Entry entry2 = (Map.Entry) it.next();
+            arrayList.add(new Pair(entry2.getKey(), entry2.getValue()));
+        } while (it.hasNext());
+        return arrayList;
+    }
+
+    public static Sequence z(Map map) {
+        Intrinsics.checkNotNullParameter(map, "<this>");
+        return CollectionsKt___CollectionsKt.a0(map.entrySet());
+    }
+}

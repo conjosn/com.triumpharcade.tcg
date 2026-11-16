@@ -1,0 +1,38 @@
+package nn;
+
+import java.lang.reflect.Method;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+
+/* JADX INFO: renamed from: nn.a, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes6.dex */
+public abstract class AbstractC9555a {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private static final Method f85553a;
+
+    static {
+        Method method;
+        try {
+            method = ScheduledThreadPoolExecutor.class.getMethod("setRemoveOnCancelPolicy", Boolean.TYPE);
+        } catch (Throwable unused) {
+            method = null;
+        }
+        f85553a = method;
+    }
+
+    public static final boolean a(Executor executor) {
+        Method method;
+        try {
+            ScheduledThreadPoolExecutor scheduledThreadPoolExecutor = executor instanceof ScheduledThreadPoolExecutor ? (ScheduledThreadPoolExecutor) executor : null;
+            if (scheduledThreadPoolExecutor == null || (method = f85553a) == null) {
+                return false;
+            }
+            method.invoke(scheduledThreadPoolExecutor, Boolean.TRUE);
+            return true;
+        } catch (Throwable unused) {
+            return false;
+        }
+    }
+}

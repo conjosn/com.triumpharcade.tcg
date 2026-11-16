@@ -1,0 +1,20 @@
+package D6;
+
+import java.io.File;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class f implements e {
+    @Override // D6.e
+    public void e(File batchFile, a batchMetadata) {
+        Intrinsics.checkNotNullParameter(batchFile, "batchFile");
+        Intrinsics.checkNotNullParameter(batchMetadata, "batchMetadata");
+    }
+
+    @Override // D6.e
+    public void f(File batchFile, g removalReason, int i10) {
+        Intrinsics.checkNotNullParameter(batchFile, "batchFile");
+        Intrinsics.checkNotNullParameter(removalReason, "removalReason");
+    }
+}

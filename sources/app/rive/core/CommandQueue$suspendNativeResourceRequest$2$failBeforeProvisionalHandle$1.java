@@ -1,0 +1,43 @@
+package app.rive.core;
+
+import in.InterfaceC7925n;
+import kotlin.Metadata;
+import kotlin.Result;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u0001\"\n\b\u0000\u0010\u0002\u0018\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "T", "", "throwable", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
+final class CommandQueue$suspendNativeResourceRequest$2$failBeforeProvisionalHandle$1 extends Lambda implements Function1<Throwable, Unit> {
+    final /* synthetic */ InterfaceC7925n $cont;
+    final /* synthetic */ long $requestID;
+    final /* synthetic */ CommandQueue this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CommandQueue$suspendNativeResourceRequest$2$failBeforeProvisionalHandle$1(CommandQueue commandQueue, long j10, InterfaceC7925n interfaceC7925n) {
+        super(1);
+        this.this$0 = commandQueue;
+        this.$requestID = j10;
+        this.$cont = interfaceC7925n;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Unit invoke(Throwable th2) {
+        invoke2(th2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final void invoke2(Throwable throwable) {
+        Intrinsics.checkNotNullParameter(throwable, "throwable");
+        this.this$0.pendingContinuations.remove(Long.valueOf(this.$requestID));
+        this.this$0.pendingResourceCleanups.remove(Long.valueOf(this.$requestID));
+        InterfaceC7925n interfaceC7925n = this.$cont;
+        Result.Companion companion = Result.INSTANCE;
+        interfaceC7925n.resumeWith(Result.m462constructorimpl(ResultKt.createFailure(throwable)));
+    }
+}

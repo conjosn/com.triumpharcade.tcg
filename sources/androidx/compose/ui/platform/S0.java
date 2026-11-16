@@ -1,0 +1,13 @@
+package androidx.compose.ui.platform;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class S0 {
+    public static final int a(float f10) {
+        return b(f10) * (-1);
+    }
+
+    private static final int b(float f10) {
+        return Rl.a.e(f10);
+    }
+}
