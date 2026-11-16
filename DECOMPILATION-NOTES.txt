@@ -1,0 +1,1 @@
+Some Unity assets could not be exported. See unity/assets/_report.json for exact missing resource names and per-object errors; upload the named .resS/.resource files together with the assets, or choose their folder.
