@@ -1,0 +1,114 @@
+###### Class E9.i (E9.i)
+.class public LE9/i;
+.super LE9/e;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# static fields
+.field private static b:LE9/i;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 0
+
+    .line 1
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 3
+
+    .line 1
+    new-instance v0, Landroid/os/Handler;
+
+    .line 2
+    .line 3
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-direct {p0, v0}, LE9/e;-><init>(Landroid/os/Handler;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public static n0()LE9/i;
+    .registers 1
+
+    .line 1
+    sget-object v0, LE9/i;->b:LE9/i;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_b
+
+    .line 4
+    .line 5
+    new-instance v0, LE9/i;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, LE9/i;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v0, LE9/i;->b:LE9/i;
+
+    .line 11
+    .line 12
+    :cond_b
+    sget-object v0, LE9/i;->b:LE9/i;
+
+    .line 13
+    .line 14
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public execute(Ljava/lang/Runnable;)V
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0}, LE9/e;->a()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_a
+
+    .line 6
+    .line 7
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_a
+    invoke-super {p0, p1}, LE9/e;->execute(Ljava/lang/Runnable;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method

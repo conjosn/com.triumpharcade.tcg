@@ -1,0 +1,17 @@
+###### Class androidx.appcompat.widget.Q (androidx.appcompat.widget.Q)
+.class public abstract synthetic Landroidx/appcompat/widget/Q;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/graphics/Insets;)I
+    .registers 1
+
+    .line 1
+    iget p0, p0, Landroid/graphics/Insets;->right:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
