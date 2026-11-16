@@ -1,0 +1,15 @@
+###### Class q6.g (q6.g)
+.class public interface abstract Lq6/g;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Lq6/a;
+
+
+# virtual methods
+.method public abstract b()Ls6/d;
+.end method
+
+.method public abstract e()Lr6/c;
+.end method

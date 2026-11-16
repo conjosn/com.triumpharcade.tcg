@@ -1,0 +1,17 @@
+###### Class ol.T (ol.T)
+.class public abstract synthetic Lol/T;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# direct methods
+.method public static bridge synthetic a()Ljava/time/format/DateTimeFormatter;
+    .registers 1
+
+    .line 1
+    sget-object v0, Ljava/time/format/DateTimeFormatter;->ISO_INSTANT:Ljava/time/format/DateTimeFormatter;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
