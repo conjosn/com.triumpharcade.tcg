@@ -1,0 +1,21 @@
+package xe;
+
+import java.util.List;
+
+/* JADX INFO: renamed from: xe.s, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class C11645s implements com.google.firebase.auth.W {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final List f103014a;
+
+    public C11645s(List list) {
+        this.f103014a = list;
+    }
+
+    @Override // com.google.firebase.auth.W
+    public final List a() {
+        return this.f103014a;
+    }
+}

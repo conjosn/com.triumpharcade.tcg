@@ -1,0 +1,16 @@
+package B2;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class d {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private static d f1831a;
+
+    public static d a() {
+        if (f1831a == null) {
+            f1831a = new e();
+        }
+        return f1831a;
+    }
+}

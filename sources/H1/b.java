@@ -1,0 +1,9 @@
+package H1;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class b {
+    public static final float a(float f10, float f11, float f12) {
+        return a.d(K1.d.b(f10, f11, f12));
+    }
+}

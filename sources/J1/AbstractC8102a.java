@@ -1,0 +1,22 @@
+package j1;
+
+/* JADX INFO: renamed from: j1.a, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbstractC8102a {
+    public static final void a(String str) {
+        throw new IllegalArgumentException(str);
+    }
+
+    public static final void b(String str) {
+        throw new IllegalStateException(str);
+    }
+
+    public static final Void c(String str) {
+        throw new IllegalStateException(str);
+    }
+
+    public static final void d(String str) {
+        throw new IndexOutOfBoundsException(str);
+    }
+}

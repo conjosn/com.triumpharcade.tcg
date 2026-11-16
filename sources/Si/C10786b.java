@@ -1,0 +1,12 @@
+package si;
+
+import expo.modules.kotlin.exception.CodedException;
+
+/* JADX INFO: renamed from: si.b, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes5.dex */
+public final class C10786b extends CodedException {
+    public C10786b() {
+        super("Android ReviewManager task was not successful", null, 2, null);
+    }
+}

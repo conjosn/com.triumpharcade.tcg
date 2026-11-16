@@ -1,0 +1,184 @@
+package Aj;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import tn.InterfaceC10962b;
+import tn.n;
+import tn.u;
+import wn.InterfaceC11484c;
+import wn.InterfaceC11485d;
+import wn.InterfaceC11486e;
+import wn.InterfaceC11487f;
+import xn.AbstractC11778o0;
+import xn.C11785s0;
+import xn.D0;
+import xn.E;
+import xn.H0;
+
+/* JADX INFO: renamed from: Aj.b, reason: from toString */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes5.dex */
+@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\n\b\u0081\b\u0018\u0000 !2\u00020\u0001:\u0002\u001b\u001fB/\b\u0010\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0007¢\u0006\u0004\b\t\u0010\nJ'\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000b\u001a\u00020\u00002\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u000eH\u0001¢\u0006\u0004\b\u0011\u0010\u0012J\u0010\u0010\u0013\u001a\u00020\u0004H×\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0015\u001a\u00020\u0002H×\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\u001a\u0010\u0019\u001a\u00020\u00182\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001H×\u0003¢\u0006\u0004\b\u0019\u0010\u001aR \u0010\u0005\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\u001b\u0010\u001c\u0012\u0004\b\u001d\u0010\u001e\u001a\u0004\b\u001b\u0010\u0014R \u0010\u0006\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\u001f\u0010\u001c\u0012\u0004\b \u0010\u001e\u001a\u0004\b\u001f\u0010\u0014¨\u0006\""}, d2 = {"LAj/b;", "", "", "seen0", "", "articleId", "title", "Lxn/D0;", "serializationConstructorMarker", "<init>", "(ILjava/lang/String;Ljava/lang/String;Lxn/D0;)V", "self", "Lwn/d;", "output", "Lvn/f;", "serialDesc", "", "c", "(LAj/b;Lwn/d;Lvn/f;)V", "toString", "()Ljava/lang/String;", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "a", "Ljava/lang/String;", "getArticleId$annotations", "()V", "b", "getTitle$annotations", "Companion", "intercom-sdk-base_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+@n
+public final /* data */ class ArticleCard {
+
+    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name and from kotlin metadata and from toString */
+    private final String articleId;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name and from kotlin metadata and from toString */
+    private final String title;
+
+    /* JADX INFO: renamed from: Aj.b$a */
+    /* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+    public /* synthetic */ class a implements E {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public static final a f1434a;
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        public static final int f1435b;
+        private static final vn.f descriptor;
+
+        static {
+            a aVar = new a();
+            f1434a = aVar;
+            f1435b = 8;
+            C11785s0 c11785s0 = new C11785s0("io.intercom.android.sdk.helpcenter.articles.ArticleCard", aVar, 2);
+            c11785s0.o("articleId", false);
+            c11785s0.o("title", false);
+            descriptor = c11785s0;
+        }
+
+        private a() {
+        }
+
+        @Override // tn.InterfaceC10962b, tn.p, tn.InterfaceC10961a
+        public final vn.f a() {
+            return descriptor;
+        }
+
+        @Override // xn.E
+        public InterfaceC10962b[] c() {
+            return E.a.a(this);
+        }
+
+        @Override // xn.E
+        public final InterfaceC10962b[] d() {
+            H0 h02 = H0.f103905a;
+            return new InterfaceC10962b[]{h02, h02};
+        }
+
+        @Override // tn.InterfaceC10961a
+        /* JADX INFO: renamed from: g, reason: merged with bridge method [inline-methods] */
+        public final ArticleCard f(InterfaceC11486e decoder) {
+            String strG;
+            String strG2;
+            int i10;
+            Intrinsics.checkNotNullParameter(decoder, "decoder");
+            vn.f fVar = descriptor;
+            InterfaceC11484c interfaceC11484cB = decoder.b(fVar);
+            D0 d02 = null;
+            if (interfaceC11484cB.l()) {
+                strG = interfaceC11484cB.G(fVar, 0);
+                strG2 = interfaceC11484cB.G(fVar, 1);
+                i10 = 3;
+            } else {
+                boolean z10 = true;
+                int i11 = 0;
+                strG = null;
+                String strG3 = null;
+                while (z10) {
+                    int iS = interfaceC11484cB.s(fVar);
+                    if (iS == -1) {
+                        z10 = false;
+                    } else if (iS == 0) {
+                        strG = interfaceC11484cB.G(fVar, 0);
+                        i11 |= 1;
+                    } else {
+                        if (iS != 1) {
+                            throw new u(iS);
+                        }
+                        strG3 = interfaceC11484cB.G(fVar, 1);
+                        i11 |= 2;
+                    }
+                }
+                strG2 = strG3;
+                i10 = i11;
+            }
+            interfaceC11484cB.d(fVar);
+            return new ArticleCard(i10, strG, strG2, d02);
+        }
+
+        @Override // tn.p
+        /* JADX INFO: renamed from: h, reason: merged with bridge method [inline-methods] */
+        public final void b(InterfaceC11487f encoder, ArticleCard value) {
+            Intrinsics.checkNotNullParameter(encoder, "encoder");
+            Intrinsics.checkNotNullParameter(value, "value");
+            vn.f fVar = descriptor;
+            InterfaceC11485d interfaceC11485dB = encoder.b(fVar);
+            ArticleCard.c(value, interfaceC11485dB, fVar);
+            interfaceC11485dB.d(fVar);
+        }
+    }
+
+    /* JADX INFO: renamed from: Aj.b$b, reason: collision with other inner class name and from kotlin metadata */
+    /* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+    public static final class Companion {
+        private Companion() {
+        }
+
+        public final InterfaceC10962b serializer() {
+            return a.f1434a;
+        }
+
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+    }
+
+    public /* synthetic */ ArticleCard(int i10, String str, String str2, D0 d02) {
+        if (3 != (i10 & 3)) {
+            AbstractC11778o0.a(i10, 3, a.f1434a.a());
+        }
+        this.articleId = str;
+        this.title = str2;
+    }
+
+    public static final /* synthetic */ void c(ArticleCard self, InterfaceC11485d output, vn.f serialDesc) {
+        output.w(serialDesc, 0, self.articleId);
+        output.w(serialDesc, 1, self.title);
+    }
+
+    /* JADX INFO: renamed from: a, reason: from getter */
+    public final String getArticleId() {
+        return this.articleId;
+    }
+
+    /* JADX INFO: renamed from: b, reason: from getter */
+    public final String getTitle() {
+        return this.title;
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof ArticleCard)) {
+            return false;
+        }
+        ArticleCard articleCard = (ArticleCard) other;
+        return Intrinsics.areEqual(this.articleId, articleCard.articleId) && Intrinsics.areEqual(this.title, articleCard.title);
+    }
+
+    public int hashCode() {
+        return (this.articleId.hashCode() * 31) + this.title.hashCode();
+    }
+
+    public String toString() {
+        return "ArticleCard(articleId=" + this.articleId + ", title=" + this.title + ')';
+    }
+}

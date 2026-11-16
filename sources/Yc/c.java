@@ -1,0 +1,21 @@
+package Yc;
+
+import Wc.C3554x;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import md.AbstractC9354a;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+public final class c extends AbstractC9354a implements IInterface {
+    c(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.common.internal.service.IClientTelemetryService");
+    }
+
+    public final void W2(C3554x c3554x) {
+        Parcel parcelF = f();
+        md.c.b(parcelF, c3554x);
+        k(1, parcelF);
+    }
+}

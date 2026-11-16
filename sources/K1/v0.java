@@ -1,0 +1,9 @@
+package k1;
+
+import L0.m;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public interface v0 extends m.b {
+    void C0(u0 u0Var);
+}

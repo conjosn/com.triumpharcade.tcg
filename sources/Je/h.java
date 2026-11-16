@@ -1,0 +1,15 @@
+package je;
+
+import java.nio.Buffer;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+abstract class h {
+    static void a(Buffer buffer) {
+        buffer.flip();
+    }
+
+    static void b(Buffer buffer, int i10) {
+        buffer.position(i10);
+    }
+}

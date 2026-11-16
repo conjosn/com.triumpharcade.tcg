@@ -1,0 +1,69 @@
+package B2;
+
+import java.nio.ByteBuffer;
+
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes.dex */
+public final class a extends c {
+    public a f(int i10, ByteBuffer byteBuffer) {
+        g(i10, byteBuffer);
+        return this;
+    }
+
+    public void g(int i10, ByteBuffer byteBuffer) {
+        c(i10, byteBuffer);
+    }
+
+    public int h(int i10) {
+        int iB = b(16);
+        if (iB != 0) {
+            return this.f1827b.getInt(d(iB) + (i10 * 4));
+        }
+        return 0;
+    }
+
+    public int i() {
+        int iB = b(16);
+        if (iB != 0) {
+            return e(iB);
+        }
+        return 0;
+    }
+
+    public boolean j() {
+        int iB = b(6);
+        return (iB == 0 || this.f1827b.get(iB + this.f1826a) == 0) ? false : true;
+    }
+
+    public short k() {
+        int iB = b(14);
+        if (iB != 0) {
+            return this.f1827b.getShort(iB + this.f1826a);
+        }
+        return (short) 0;
+    }
+
+    public int l() {
+        int iB = b(4);
+        if (iB != 0) {
+            return this.f1827b.getInt(iB + this.f1826a);
+        }
+        return 0;
+    }
+
+    public short m() {
+        int iB = b(8);
+        if (iB != 0) {
+            return this.f1827b.getShort(iB + this.f1826a);
+        }
+        return (short) 0;
+    }
+
+    public short n() {
+        int iB = b(12);
+        if (iB != 0) {
+            return this.f1827b.getShort(iB + this.f1826a);
+        }
+        return (short) 0;
+    }
+}

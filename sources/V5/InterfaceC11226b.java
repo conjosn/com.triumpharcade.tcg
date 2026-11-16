@@ -1,0 +1,19 @@
+package v5;
+
+import A5.i;
+
+/* JADX INFO: renamed from: v5.b, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes3.dex */
+public interface InterfaceC11226b {
+
+    /* JADX INFO: renamed from: v5.b$a */
+    /* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+    public interface a {
+        i d();
+
+        B5.i getSize();
+    }
+
+    Object a(a aVar, Hl.b bVar);
+}

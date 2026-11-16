@@ -1,0 +1,20 @@
+package sb;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+/* JADX INFO: renamed from: sb.a, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7 */
+/* JADX INFO: loaded from: classes4.dex */
+@Retention(RetentionPolicy.RUNTIME)
+public @interface InterfaceC10773a {
+    boolean canOverrideExistingModule() default false;
+
+    boolean hasConstants() default true;
+
+    boolean isCxxModule() default false;
+
+    String name();
+
+    boolean needsEagerInit() default false;
+}
