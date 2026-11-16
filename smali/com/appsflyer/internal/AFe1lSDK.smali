@@ -1,0 +1,44 @@
+###### Class com.appsflyer.internal.AFe1lSDK (com.appsflyer.internal.AFe1lSDK)
+.class public final Lcom/appsflyer/internal/AFe1lSDK;
+.super Ljava/util/TimerTask;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# instance fields
+.field private final getCurrencyIso4217Code:Ljava/lang/Thread;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Thread;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/appsflyer/internal/AFe1lSDK;->getCurrencyIso4217Code:Ljava/lang/Thread;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/appsflyer/internal/AFe1lSDK;->getCurrencyIso4217Code:Ljava/lang/Thread;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

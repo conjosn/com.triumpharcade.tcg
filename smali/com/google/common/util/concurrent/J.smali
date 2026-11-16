@@ -1,0 +1,33 @@
+###### Class com.google.common.util.concurrent.J (com.google.common.util.concurrent.J)
+.class abstract Lcom/google/common/util/concurrent/J;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# direct methods
+.method static a(Ljava/lang/Object;J)V
+    .registers 5
+
+    .line 1
+    const-wide v0, 0x1dcd64ffffffffffL    # 3.98785104510193E-165
+
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->min(JJ)J
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-wide p1
+
+    .line 10
+    invoke-static {p0, p1, p2}, Ljava/util/concurrent/locks/LockSupport;->parkNanos(Ljava/lang/Object;J)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method

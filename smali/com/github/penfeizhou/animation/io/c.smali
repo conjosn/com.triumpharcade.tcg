@@ -1,0 +1,182 @@
+###### Class com.github.penfeizhou.animation.io.c (com.github.penfeizhou.animation.io.c)
+.class public abstract Lcom/github/penfeizhou/animation/io/c;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Lcom/github/penfeizhou/animation/io/Reader;
+
+
+# instance fields
+.field protected reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+
+# direct methods
+.method public constructor <init>(Lcom/github/penfeizhou/animation/io/Reader;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public available()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lcom/github/penfeizhou/animation/io/Reader;->available()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public close()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lcom/github/penfeizhou/animation/io/Reader;->close()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public peek()B
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lcom/github/penfeizhou/animation/io/Reader;->peek()B
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public position()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lcom/github/penfeizhou/animation/io/Reader;->position()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public read([BII)I
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2, p3}, Lcom/github/penfeizhou/animation/io/Reader;->read([BII)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public reset()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lcom/github/penfeizhou/animation/io/Reader;->reset()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public skip(J)J
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2}, Lcom/github/penfeizhou/animation/io/Reader;->skip(J)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
+.end method
+
+.method public toInputStream()Ljava/io/InputStream;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/github/penfeizhou/animation/io/c;->reset()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/github/penfeizhou/animation/io/c;->reader:Lcom/github/penfeizhou/animation/io/Reader;
+
+    .line 5
+    .line 6
+    invoke-interface {v0}, Lcom/github/penfeizhou/animation/io/Reader;->toInputStream()Ljava/io/InputStream;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    return-object v0
+.end method

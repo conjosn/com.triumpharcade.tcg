@@ -1,0 +1,235 @@
+###### Class com.fingerprintjs.android.fpjs_pro_internal.C5164u (com.fingerprintjs.android.fpjs_pro_internal.u)
+.class public final Lcom/fingerprintjs/android/fpjs_pro_internal/u;
+.super Lcom/fingerprintjs/android/fpjs_pro_internal/K2;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/fingerprintjs/android/fpjs_pro_internal/K2<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static b:I = 0x0
+
+.field public static c:I = 0x0
+
+.field private static d:I = 0x0
+
+.field private static e:I = 0x1
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .registers 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0}, Lcom/fingerprintjs/android/fpjs_pro_internal/K2;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-object p1, p0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->a:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private b()Ljava/lang/String;
+    .registers 4
+
+    .line 1
+    sget v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->e:I
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->a:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    or-int/lit8 v2, v0, 0x61
+
+    .line 6
+    .line 7
+    shl-int/lit8 v2, v2, 0x1
+
+    .line 8
+    .line 9
+    xor-int/lit8 v0, v0, 0x61
+
+    .line 10
+    .line 11
+    sub-int/2addr v2, v0
+
+    .line 12
+    rem-int/lit16 v0, v2, 0x80
+
+    .line 13
+    .line 14
+    sput v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->d:I
+
+    .line 15
+    .line 16
+    rem-int/lit8 v2, v2, 0x2
+
+    .line 17
+    .line 18
+    if-nez v2, :cond_14
+
+    .line 19
+    .line 20
+    return-object v1
+
+    .line 21
+    :cond_14
+    const/4 v0, 0x0
+
+    .line 22
+    throw v0
+.end method
+
+.method public static c()I
+    .registers 2
+
+    .line 1
+    sget v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->b:I
+
+    .line 2
+    .line 3
+    const v1, 0x51e70e
+
+    .line 4
+    .line 5
+    .line 6
+    rem-int v1, v0, v1
+
+    .line 7
+    .line 8
+    add-int/lit8 v0, v0, 0x1
+
+    .line 9
+    .line 10
+    sput v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->b:I
+
+    .line 11
+    .line 12
+    if-eqz v1, :cond_10
+
+    .line 13
+    .line 14
+    sget v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->c:I
+
+    .line 15
+    .line 16
+    return v0
+
+    .line 17
+    :cond_10
+    invoke-static {}, Landroid/os/Process;->getElapsedCpuTime()J
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-wide v0
+
+    .line 21
+    long-to-int v0, v0
+
+    .line 22
+    sput v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->c:I
+
+    .line 23
+    .line 24
+    return v0
+.end method
+
+
+# virtual methods
+.method public final synthetic a()Ljava/lang/Object;
+    .registers 4
+
+    .line 1
+    sget v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->e:I
+
+    .line 2
+    .line 3
+    add-int/lit8 v0, v0, 0x39
+
+    .line 4
+    .line 5
+    rem-int/lit16 v0, v0, 0x80
+
+    .line 6
+    .line 7
+    sput v0, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->d:I
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->b()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    sget v1, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->e:I
+
+    .line 14
+    .line 15
+    and-int/lit8 v2, v1, 0x9
+
+    .line 16
+    .line 17
+    or-int/lit8 v1, v1, 0x9
+
+    .line 18
+    .line 19
+    add-int/2addr v2, v1
+
+    .line 20
+    rem-int/lit16 v1, v2, 0x80
+
+    .line 21
+    .line 22
+    sput v1, Lcom/fingerprintjs/android/fpjs_pro_internal/u;->d:I
+
+    .line 23
+    .line 24
+    rem-int/lit8 v2, v2, 0x2
+
+    .line 25
+    .line 26
+    if-nez v2, :cond_1c
+
+    .line 27
+    .line 28
+    return-object v0
+
+    .line 29
+    :cond_1c
+    const/4 v0, 0x0
+
+    .line 30
+    throw v0
+.end method

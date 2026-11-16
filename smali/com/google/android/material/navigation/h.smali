@@ -1,0 +1,15 @@
+###### Class com.google.android.material.navigation.h (com.google.android.material.navigation.h)
+.class public interface abstract Lcom/google/android/material/navigation/h;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Landroidx/appcompat/view/menu/k$a;
+
+
+# virtual methods
+.method public abstract setExpanded(Z)V
+.end method
+
+.method public abstract setOnlyShowWhenExpanded(Z)V
+.end method

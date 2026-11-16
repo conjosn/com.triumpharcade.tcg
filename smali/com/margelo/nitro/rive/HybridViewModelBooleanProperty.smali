@@ -1,0 +1,1405 @@
+###### Class com.margelo.nitro.rive.HybridViewModelBooleanProperty (com.margelo.nitro.rive.HybridViewModelBooleanProperty)
+.class public final Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+.super Lcom/margelo/nitro/rive/HybridViewModelBooleanPropertySpec;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Lcom/margelo/nitro/rive/BaseHybridViewModelProperty;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/margelo/nitro/rive/HybridViewModelBooleanPropertySpec;",
+        "Lcom/margelo/nitro/rive/BaseHybridViewModelProperty<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010%\n\u0002\u0008\u0006\u0008\u0007\u0018\u0000 72\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00030\u0002:\u00018B\u0017\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0017\u0010\u000c\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\u0003H\u0016\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u001d\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000e2\u0006\u0010\n\u001a\u00020\u0003H\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u0015\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u000eH\u0016\u00a2\u0006\u0004\u0008\u0011\u0010\u0012J)\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u00152\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000b0\u0013H\u0016\u00a2\u0006\u0004\u0008\u0016\u0010\u0017J\u0010\u0010\u0018\u001a\u00020\u000bH\u0096\u0001\u00a2\u0006\u0004\u0008\u0018\u0010\u0019J\u0010\u0010\u001a\u001a\u00020\u000bH\u0096\u0001\u00a2\u0006\u0004\u0008\u001a\u0010\u0019J&\u0010\u001f\u001a\u00020\u000b2\u000c\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u001b2\u0006\u0010\u001e\u001a\u00020\u001dH\u0096\u0001\u00a2\u0006\u0004\u0008\u001f\u0010 J\u0018\u0010\u0014\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\u0003H\u0096\u0001\u00a2\u0006\u0004\u0008\u0014\u0010\rJ*\u0010\"\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u00152\u0012\u0010!\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000b0\u0013H\u0096\u0001\u00a2\u0006\u0004\u0008\"\u0010\u0017J\u0018\u0010$\u001a\u00020\u000b2\u0006\u0010#\u001a\u00020\u0006H\u0096\u0001\u00a2\u0006\u0004\u0008$\u0010%R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0005\u0010&R\u0014\u0010\u0007\u001a\u00020\u00068\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0007\u0010\'R$\u0010\n\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u00038V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008(\u0010)\"\u0004\u0008*\u0010\rR\u0016\u0010.\u001a\u0004\u0018\u00010+8\u0016X\u0096\u0005\u00a2\u0006\u0006\u001a\u0004\u0008,\u0010-R\u0016\u00102\u001a\u0004\u0018\u00010/8\u0016X\u0096\u0005\u00a2\u0006\u0006\u001a\u0004\u00080\u00101R,\u00106\u001a\u001a\u0012\u0004\u0012\u00020\u0006\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000b0\u0013038\u0016X\u0096\u0005\u00a2\u0006\u0006\u001a\u0004\u00084\u00105\u00a8\u00069"
+    }
+    d2 = {
+        "Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;",
+        "Lcom/margelo/nitro/rive/HybridViewModelBooleanPropertySpec;",
+        "Lcom/margelo/nitro/rive/BaseHybridViewModelProperty;",
+        "",
+        "Lapp/rive/ViewModelInstance;",
+        "instance",
+        "",
+        "path",
+        "<init>",
+        "(Lapp/rive/ViewModelInstance;Ljava/lang/String;)V",
+        "value",
+        "",
+        "set",
+        "(Z)V",
+        "Lcom/margelo/nitro/core/Promise;",
+        "setValueAsync",
+        "(Z)Lcom/margelo/nitro/core/Promise;",
+        "getValueAsync",
+        "()Lcom/margelo/nitro/core/Promise;",
+        "Lkotlin/Function1;",
+        "onChanged",
+        "Lkotlin/Function0;",
+        "addListener",
+        "(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;",
+        "removeListeners",
+        "()V",
+        "dispose",
+        "Lln/f;",
+        "valueFlow",
+        "",
+        "drop",
+        "ensureValueListenerJob",
+        "(Lln/f;I)V",
+        "callback",
+        "addListenerInternal",
+        "id",
+        "removeListener",
+        "(Ljava/lang/String;)V",
+        "Lapp/rive/ViewModelInstance;",
+        "Ljava/lang/String;",
+        "getValue",
+        "()Z",
+        "setValue",
+        "Lin/O;",
+        "getScope",
+        "()Lin/O;",
+        "scope",
+        "Lin/C0;",
+        "getJob",
+        "()Lin/C0;",
+        "job",
+        "",
+        "getListeners",
+        "()Ljava/util/Map;",
+        "listeners",
+        "Companion",
+        "a",
+        "rive-app_react-native_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;
+
+.field private static final TAG:Ljava/lang/String; = "HybridViewModelBooleanProperty"
+
+
+# instance fields
+.field private final synthetic $$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final instance:Lapp/rive/ViewModelInstance;
+
+.field private final path:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->Companion:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(Lapp/rive/ViewModelInstance;Ljava/lang/String;)V
+    .registers 4
+
+    .line 1
+    const-string v0, "instance"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "path"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-direct {p0}, Lcom/margelo/nitro/rive/HybridViewModelBooleanPropertySpec;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v0, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 15
+    .line 16
+    invoke-direct {v0}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;-><init>()V
+
+    .line 17
+    .line 18
+    .line 19
+    iput-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 20
+    .line 21
+    iput-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->instance:Lapp/rive/ViewModelInstance;
+
+    .line 22
+    .line 23
+    iput-object p2, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->path:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    return-void
+.end method
+
+.method public static final synthetic access$getInstance$p(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;)Lapp/rive/ViewModelInstance;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->instance:Lapp/rive/ViewModelInstance;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic access$getPath$p(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;)Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->path:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public addListener(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;
+    .registers 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "onChanged"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->addListenerInternal(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->instance:Lapp/rive/ViewModelInstance;
+
+    .line 11
+    .line 12
+    iget-object v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->path:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Lapp/rive/ViewModelInstance;->getBooleanFlow(Ljava/lang/String;)Lln/f;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    const/4 v1, 0x2
+
+    .line 19
+    const/4 v2, 0x0
+
+    .line 20
+    const/4 v3, 0x0
+
+    .line 21
+    invoke-static {p0, v0, v3, v1, v2}, Lcom/margelo/nitro/rive/BaseHybridViewModelProperty$a;->a(Lcom/margelo/nitro/rive/BaseHybridViewModelProperty;Lln/f;IILjava/lang/Object;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object p1
+.end method
+
+.method public addListenerInternal(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "callback"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, p1}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->addListenerInternal(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    return-object p1
+.end method
+
+.method public dispose()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->dispose()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public ensureValueListenerJob(Lln/f;I)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lln/f;",
+            "I)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "valueFlow"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, p1, p2}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->ensureValueListenerJob(Lln/f;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public getJob()Lin/C0;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->getJob()Lin/C0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getListeners()Ljava/util/Map;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lkotlin/jvm/functions/Function1<",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->getListeners()Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getScope()Lin/O;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->getScope()Lin/O;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public getValue()Z
+    .registers 6
+
+    .line 1
+    sget-object v0, Lcom/margelo/nitro/rive/i;->a:Lcom/margelo/nitro/rive/i;
+
+    .line 2
+    .line 3
+    const-string v1, "BooleanProperty.value"
+
+    .line 4
+    .line 5
+    const-string v2, "getValueAsync"
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1, v2}, Lcom/margelo/nitro/rive/i;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    :try_start_9
+    new-instance v0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;
+
+    .line 11
+    .line 12
+    const/4 v1, 0x0
+
+    .line 13
+    invoke-direct {v0, p0, v1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;-><init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;LHl/b;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const/4 v2, 0x1
+
+    .line 17
+    invoke-static {v1, v0, v2, v1}, Lin/i;->f(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 22
+    .line 23
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+    :try_end_1a
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_1a} :catch_1b
+
+    .line 27
+    return v0
+
+    .line 28
+    :catch_1b
+    move-exception v0
+
+    .line 29
+    sget-object v1, Lcom/margelo/nitro/rive/H;->a:Lcom/margelo/nitro/rive/H;
+
+    .line 30
+    .line 31
+    iget-object v2, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->path:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 40
+    .line 41
+    .line 42
+    const-string v4, "getValue failed for path \'"
+
+    .line 43
+    .line 44
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    const-string v2, "\': "
+
+    .line 51
+    .line 52
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v0
+
+    .line 62
+    const-string v2, "HybridViewModelBooleanProperty"
+
+    .line 63
+    .line 64
+    invoke-virtual {v1, v2, v0}, Lcom/margelo/nitro/rive/H;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 65
+    .line 66
+    .line 67
+    const/4 v0, 0x0
+
+    .line 68
+    return v0
+.end method
+
+.method public getValueAsync()Lcom/margelo/nitro/core/Promise;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/margelo/nitro/core/Promise<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/margelo/nitro/core/Promise;->Companion:Lcom/margelo/nitro/core/Promise$a;
+
+    .line 2
+    .line 3
+    new-instance v1, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v1, p0, v2}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;-><init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;LHl/b;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 v3, 0x1
+
+    .line 10
+    invoke-static {v0, v2, v1, v3, v2}, Lcom/margelo/nitro/core/Promise$a;->b(Lcom/margelo/nitro/core/Promise$a;Lin/O;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/margelo/nitro/core/Promise;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    return-object v0
+.end method
+
+.method public bridge synthetic onChanged(Ljava/lang/Object;)V
+    .registers 2
+
+    .line 2
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->onChanged(Z)V
+
+    return-void
+.end method
+
+.method public onChanged(Z)V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->onChanged(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public removeListener(Ljava/lang/String;)V
+    .registers 3
+
+    .line 1
+    const-string v0, "id"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, p1}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->removeListener(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public removeListeners()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->$$delegate_0:Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/margelo/nitro/rive/BaseHybridViewModelPropertyImpl;->removeListeners()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public set(Z)V
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->instance:Lapp/rive/ViewModelInstance;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->path:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1, p1}, Lapp/rive/ViewModelInstance;->setBoolean(Ljava/lang/String;Z)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public setValue(Z)V
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->set(Z)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public setValueAsync(Z)Lcom/margelo/nitro/core/Promise;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)",
+            "Lcom/margelo/nitro/core/Promise<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/margelo/nitro/core/Promise;->Companion:Lcom/margelo/nitro/core/Promise$a;
+
+    .line 2
+    .line 3
+    new-instance v1, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v1, p0, p1, v2}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;-><init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;ZLHl/b;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 p1, 0x1
+
+    .line 10
+    invoke-static {v0, v2, v1, p1, v2}, Lcom/margelo/nitro/core/Promise$a;->b(Lcom/margelo/nitro/core/Promise$a;Lin/O;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/margelo/nitro/core/Promise;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
+    return-object p1
+.end method
+
+###### Class com.margelo.nitro.rive.HybridViewModelBooleanProperty.Companion (com.margelo.nitro.rive.HybridViewModelBooleanProperty$a)
+.class public final Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$a;-><init>()V
+
+    return-void
+.end method
+
+###### Class com.margelo.nitro.rive.HybridViewModelBooleanProperty.b (com.margelo.nitro.rive.HybridViewModelBooleanProperty$b)
+.class final Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;
+.super Lkotlin/coroutines/jvm/internal/m;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->getValueAsync()Lcom/margelo/nitro/core/Promise;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field final synthetic b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+
+# direct methods
+.method constructor <init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;LHl/b;)V
+    .registers 3
+
+    .line 1
+    iput-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/m;-><init>(ILHl/b;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(LHl/b;)LHl/b;
+    .registers 4
+
+    .line 1
+    new-instance v0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;-><init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;LHl/b;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object v0
+.end method
+
+.method public final invoke(LHl/b;)Ljava/lang/Object;
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->create(LHl/b;)LHl/b;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;
+
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p1, v0}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 2
+    check-cast p1, LHl/b;
+
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->invoke(LHl/b;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 5
+
+    .line 1
+    invoke-static {}, LIl/b;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-eqz v1, :cond_17
+
+    .line 9
+    .line 10
+    if-ne v1, v2, :cond_f
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Lkotlin/ResultKt;->a(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p1
+
+    .line 16
+    :cond_f
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 17
+    .line 18
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 19
+    .line 20
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    throw p1
+
+    .line 24
+    :cond_17
+    invoke-static {p1}, Lkotlin/ResultKt;->a(Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 28
+    .line 29
+    invoke-static {p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->access$getInstance$p(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;)Lapp/rive/ViewModelInstance;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    iget-object v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 34
+    .line 35
+    invoke-static {v1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->access$getPath$p(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v1
+
+    .line 39
+    invoke-virtual {p1, v1}, Lapp/rive/ViewModelInstance;->getBooleanFlow(Ljava/lang/String;)Lln/f;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    iput v2, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$b;->a:I
+
+    .line 44
+    .line 45
+    invoke-static {p1, p0}, Lln/h;->w(Lln/f;LHl/b;)Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    if-ne p1, v0, :cond_33
+
+    .line 50
+    .line 51
+    return-object v0
+
+    .line 52
+    :cond_33
+    return-object p1
+.end method
+
+###### Class com.margelo.nitro.rive.HybridViewModelBooleanProperty.c (com.margelo.nitro.rive.HybridViewModelBooleanProperty$c)
+.class final Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;
+.super Lkotlin/coroutines/jvm/internal/m;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->setValueAsync(Z)Lcom/margelo/nitro/core/Promise;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field final synthetic b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+.field final synthetic c:Z
+
+
+# direct methods
+.method constructor <init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;ZLHl/b;)V
+    .registers 4
+
+    .line 1
+    iput-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 2
+    .line 3
+    iput-boolean p2, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->c:Z
+
+    .line 4
+    .line 5
+    const/4 p1, 0x1
+
+    .line 6
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/m;-><init>(ILHl/b;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(LHl/b;)LHl/b;
+    .registers 5
+
+    .line 1
+    new-instance v0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 4
+    .line 5
+    iget-boolean v2, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->c:Z
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;-><init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;ZLHl/b;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public final invoke(LHl/b;)Ljava/lang/Object;
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->create(LHl/b;)LHl/b;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;
+
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p1, v0}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 2
+    check-cast p1, LHl/b;
+
+    invoke-virtual {p0, p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->invoke(LHl/b;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    .line 1
+    invoke-static {}, LIl/b;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    iget v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->a:I
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_14
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lkotlin/ResultKt;->a(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 12
+    .line 13
+    iget-boolean v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$c;->c:Z
+
+    .line 14
+    .line 15
+    invoke-virtual {p1, v0}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->set(Z)V
+
+    .line 16
+    .line 17
+    .line 18
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 19
+    .line 20
+    return-object p1
+
+    .line 21
+    :cond_14
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 22
+    .line 23
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 24
+    .line 25
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    throw p1
+.end method
+
+###### Class com.margelo.nitro.rive.HybridViewModelBooleanProperty.d (com.margelo.nitro.rive.HybridViewModelBooleanProperty$d)
+.class final Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;
+.super Lkotlin/coroutines/jvm/internal/m;
+.source "r8-map-id-940f18ab85e820b76c1aea4e5d245aebce61234115f21a853dcf272a4d2385f7"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->getValue()Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field final synthetic b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+
+# direct methods
+.method constructor <init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;LHl/b;)V
+    .registers 3
+
+    .line 1
+    iput-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x2
+
+    .line 4
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/m;-><init>(ILHl/b;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;LHl/b;)LHl/b;
+    .registers 4
+
+    .line 1
+    new-instance p1, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0, p2}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;-><init>(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;LHl/b;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object p1
+.end method
+
+.method public final invoke(Lin/O;LHl/b;)Ljava/lang/Object;
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->create(Ljava/lang/Object;LHl/b;)LHl/b;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;
+
+    sget-object p2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p1, p2}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    .line 2
+    check-cast p1, Lin/O;
+
+    check-cast p2, LHl/b;
+
+    invoke-virtual {p0, p1, p2}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->invoke(Lin/O;LHl/b;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 5
+
+    .line 1
+    invoke-static {}, LIl/b;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-eqz v1, :cond_17
+
+    .line 9
+    .line 10
+    if-ne v1, v2, :cond_f
+
+    .line 11
+    .line 12
+    invoke-static {p1}, Lkotlin/ResultKt;->a(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p1
+
+    .line 16
+    :cond_f
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 17
+    .line 18
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 19
+    .line 20
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 21
+    .line 22
+    .line 23
+    throw p1
+
+    .line 24
+    :cond_17
+    invoke-static {p1}, Lkotlin/ResultKt;->a(Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object p1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 28
+    .line 29
+    invoke-static {p1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->access$getInstance$p(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;)Lapp/rive/ViewModelInstance;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    iget-object v1, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->b:Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;
+
+    .line 34
+    .line 35
+    invoke-static {v1}, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;->access$getPath$p(Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty;)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v1
+
+    .line 39
+    invoke-virtual {p1, v1}, Lapp/rive/ViewModelInstance;->getBooleanFlow(Ljava/lang/String;)Lln/f;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    iput v2, p0, Lcom/margelo/nitro/rive/HybridViewModelBooleanProperty$d;->a:I
+
+    .line 44
+    .line 45
+    invoke-static {p1, p0}, Lln/h;->w(Lln/f;LHl/b;)Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    if-ne p1, v0, :cond_33
+
+    .line 50
+    .line 51
+    return-object v0
+
+    .line 52
+    :cond_33
+    return-object p1
+.end method
